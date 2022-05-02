@@ -23,6 +23,7 @@ nav a {
     font-weight: bold;
     font-size:20px;
     text-decoration: none;
+    font-family:sans-serif;
 }
 nav a:hover{
     color: #955faa;
@@ -43,6 +44,7 @@ nav a:hover{
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    box-shadow: 10px 10px  #955faa;
 }
 .produtos li:hover{
     color:#955faa;
@@ -51,6 +53,7 @@ nav a:hover{
 .produtos li:active{
     color:#847de0;
     border-color: #847de0;
+    box-shadow: 10px 10px  #847de0;
 }
 .produtos li:hover h2{
     font-size:34px;
