@@ -1,71 +1,142 @@
-header{
-    background-color: #CCCCCC;
-}
-.logo{
-    margin-left: 60px;
 
-}
-#banner{
-    width: 100%;
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
 }
 .caixa{
     width: 940px;
     position:relative;
-}
-.titulo{
-    font-size: 24px;
-    
+    margin: 0 auto;
 }
 nav{
-    text-align: right;
-
+    position: absolute;
+    top:0;
+    right: 0;
+    top:110px
 }
 nav li{
     display: inline;
-    margin: 0 0 0 20px;    
+    margin: 0 0 0 15px;
 }
-nav a{
+nav a {
     text-transform: uppercase;
     color: #000000;
-    font-size:19px;
+    font-weight: bold;
+    font-size:20px;
     text-decoration: none;
+    font-family:sans-serif;
 }
 nav a:hover{
     color: #955faa;
+    text-decoration: underline;
+}
+.banner{
+    width: 100%;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+    font-family:sans-serif;
+}
+/*main > p{
+    background-color: #955faa;
+}
+marcação especifica no <p> q é filho direto do main
+
+img + p{
+    background-color: #955faa;
+}
+**para o primeiro <p> depois de uma imagem**
+
+img ~ p{ 
+    background-color: #955faa;
+}
+**para todos os <p> depois de uma imagem**
+
+.principal p:not(#missao){
+    background-color: #955faa;
+**para todos os <p> menos os da #missão**    
+}*/
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:sans-serif;
+}
+.principal p{
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+.principal strong{
     font-weight: bold;
 }
-.centralizado{
-    text-align: center;
-    font-size: 30px;
-    margin:30px;
+.principal em{
+    font-style: italic;
 }
-.sobre{
+.utensilio {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+.mapa-conteudo{
+    width:940px;
+    margin:0 auto;
+    box-shadow: 10px 10px 0 0 #6c487a;
+}
+.mapa p{
+    margin: 0 0 2em;
     text-align: center;
     font-size: 20px;
-    margin: 30px;
-}
-#barbearia{
-    color:#503e57;
-    text-decoration: underline;
-    
+    font-family:sans-serif;
 }
 .beneficios{
-    border: 2px solid #000000;
-    border-radius: 10px;
+    padding: 3em 0;
+    background: #888888;
+    font-family:sans-serif;
 }
 .itens{
     font-size: 20px;
-    margin:15px;
-    text-align: center;
+    line-height: 1.5;
+}
+.itens:first-child{
+    font-weight: bold
+}
+.itens::before{
+    content: "🟊";
+}
+.imagem-beneficios{
+    width: 60%;
+    opacity:1;
+    box-shadow: 10px 10px  #6c487a;
+}
+.imagem-beneficios:hover{
+    opacity: 0.7;
+    transition: 400ms;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+
+}
+.lista{
+    width:40%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-
-#missao{
-    font-size: 25px;
-    text-align: center;
-    color:#503e57;
-    text-decoration: underline;
-    margin: 30px;
+.video{
+   width: 560px;
+   margin: 2em auto;
+   box-shadow: 10px 10px  #6c487a;
 }
 footer{
     text-align: center;
@@ -76,4 +147,21 @@ footer{
     color: #FFFFFF;
     font-size:13px;
     margin-top: 20px;
+}
+@media screen and (max-width: 480px) {
+    .caixa,.principal, .conteudo-beneficios,.mapa-conteudo,.video{
+       width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    
+        text-align: center;
+    }
+    .lista, .imagem-beneficios{
+        width: 100%;
+    }
+    
 }
