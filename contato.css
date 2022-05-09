@@ -91,3 +91,26 @@ td, th{
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+@media screen and (max-width: 480px){
+    .caixa{
+        width: auto;
+        padding:10px 10px;
+    }
+    h1{
+        text-align: center;    
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+    nav ul{
+        padding: 20px 0 20px 0;
+    }
+    .enviar, .enviar:hover{
+        width: 30%;
+        margin-left: 10px;
+    }
+    .enviar:hover{
+        transform:scale(1.05)
+    }
+}

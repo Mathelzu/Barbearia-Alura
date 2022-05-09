@@ -81,3 +81,24 @@ footer{
     font-size:13px;
     margin-top: 20px;
 }
+@media screen and (max-width: 480px){
+    .caixa{
+        width: auto;
+        padding:10px 10px;
+    }
+    h1{
+        text-align: center;
+        
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+    nav ul{
+        padding: 20px 0 20px 0;
+    }
+    .produtos li{
+        display:block;
+        margin-top: 20px;
+    }
+}
